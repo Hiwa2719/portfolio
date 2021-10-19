@@ -6,6 +6,8 @@
         {% for post in post_list %}
             <li>
                 <p>{{ post }}</p>
+                <img src="{{ post.image.url }}" alt="" height="250px">
+                <p>{{ post.summery }}</p>
             </li>
         {% endfor %}
     </ul>

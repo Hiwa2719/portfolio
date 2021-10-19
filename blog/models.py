@@ -4,7 +4,7 @@ from django.urls import reverse
 
 class Post(models.Model):
     title = models.CharField(max_length=256)
-    image = models.ImageField()
+    image = models.ImageField(upload_to='images/')
     content = models.TextField()
     pub_date = models.DateTimeField(auto_now=False, auto_now_add=True)
 

@@ -14,3 +14,7 @@ class PostListView(ListView):
 
 class PostDetailView(DetailView):
     model = Post
+
+
+class ContactView(TemplateView):
+    template_name = 'blog/contact.html'  # todo edit contact.html
